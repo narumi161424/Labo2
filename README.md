@@ -1,4 +1,4 @@
 # Labo2
-![start](./start.png “start”)
+![start](./game.png “game”)
 
 あああ
