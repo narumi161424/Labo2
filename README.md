@@ -1,4 +1,4 @@
 # Labo2
-![start](./game.png “game”)
+![start](https://github.com/narumi161424/Labo2/blob/master/game.png “game”)
 
 あああ
