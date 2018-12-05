@@ -7,7 +7,7 @@ AnimationClip:
   m_PrefabInternal: {fileID: 0}
   m_Name: syaruru_move
   serializedVersion: 6
-  m_Legacy: 0
+  m_Legacy: 1
   m_Compressed: 0
   m_UseHighQualityCurve: 1
   m_RotationCurves: []
@@ -38,20 +38,8 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - serializedVersion: 2
-      path: 0
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-    pptrCurveMapping:
-    - {fileID: 21300000, guid: f97e1c265c53e44f2be7a21486209637, type: 3}
-    - {fileID: 21300000, guid: d65db42879d3c4757a377c70c0981560, type: 3}
-    - {fileID: 21300000, guid: e9dcea42b55574292a60f0280f667b55, type: 3}
-    - {fileID: 21300000, guid: f7b12a538cb434706a5665b3d7c3c040, type: 3}
-    - {fileID: 21300000, guid: 9cc18d9809a1e42f59739c0756d3d11b, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

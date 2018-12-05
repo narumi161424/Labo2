@@ -7,7 +7,7 @@ AnimationClip:
   m_PrefabInternal: {fileID: 0}
   m_Name: HP
   serializedVersion: 6
-  m_Legacy: 0
+  m_Legacy: 1
   m_Compressed: 0
   m_UseHighQualityCurve: 1
   m_RotationCurves: []
@@ -38,20 +38,8 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - serializedVersion: 2
-      path: 0
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-    pptrCurveMapping:
-    - {fileID: 21300000, guid: 843d4b284ff3547be88cd9f892deec42, type: 3}
-    - {fileID: 21300000, guid: 23b66b3105f874d26bbc9d5b5165c0f7, type: 3}
-    - {fileID: 21300000, guid: 325a112683378494f9f41c9843efe886, type: 3}
-    - {fileID: 21300000, guid: 843d4b284ff3547be88cd9f892deec42, type: 3}
-    - {fileID: 21300000, guid: 843d4b284ff3547be88cd9f892deec42, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
