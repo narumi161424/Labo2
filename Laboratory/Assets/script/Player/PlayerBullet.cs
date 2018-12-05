@@ -13,16 +13,15 @@ public class PlayerBullet : MonoBehaviour
     {
 
 
+        //ポーズ中ならまるまる処理を飛ばす
+        if (GameDirector.Instance.IsPause)
+            return;
+
         // 弾と衝突した場合
         if (collision.name.Contains("KaruaBoss"))
         {
 
             //敵にダメージを与える
-
-
-            //爆発を作る
-            //var bom = Instantiate(MobRoot.Instance.Bom, transform.parent);
-            //bom.transform.position = transform.position;
 
 
 

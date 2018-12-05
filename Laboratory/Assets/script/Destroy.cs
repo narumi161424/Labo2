@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet_Attack : MonoBehaviour {
+public class Destroy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,4 +13,9 @@ public class Bullet_Attack : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    void OnBecameInvisible()
+    {
+        Destroy(this.gameObject);
+    }
 }

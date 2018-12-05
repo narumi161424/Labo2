@@ -7,6 +7,15 @@ public class TeresaDamege : MonoBehaviour
 
 {
 
+    //ポーズ中に止める攻撃一覧
+    public GameObject kurukurumawaru;
+    public GameObject Homing;
+    public GameObject ringring;
+    public GameObject mawaru;
+    public GameObject kakusan;
+
+
+
 
     public AudioClip destroySound;
     public int m_HP;
@@ -19,7 +28,27 @@ public class TeresaDamege : MonoBehaviour
     void Start()
     {
         //AudioSourceコンポーネントを取得し、変数に格納
-        // sound01 = GetComponent<AudioSource>();
+         sound01 = GetComponent<AudioSource>();
+    }
+
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        //ポーズ中に止める攻撃
+
+        kurukurumawaru.SetActive(!GameDirector.Instance.IsPause);
+        Homing.SetActive(!GameDirector.Instance.IsPause);
+        ringring.SetActive(!GameDirector.Instance.IsPause);
+        mawaru.SetActive(!GameDirector.Instance.IsPause);
+        kakusan.SetActive(!GameDirector.Instance.IsPause);
+
+
+        //ポーズ中ならまるまる処理を飛ばす
+        if (GameDirector.Instance.IsPause)
+            return;
+
     }
 
 
@@ -38,7 +67,7 @@ public class TeresaDamege : MonoBehaviour
 
             // 弾が敵に当たったら音を出す
 
-            // sound01.PlayOneShot(sound01.clip);
+            sound01.PlayOneShot(sound01.clip);
 
 
             // 弾を削除する
@@ -51,16 +80,13 @@ public class TeresaDamege : MonoBehaviour
             if (0 < m_HP) return;
 
 
-            //爆発を作る
-            //var bom = Instantiate(MobRoot.Instance.Bom, transform.parent);
-            //bom.transform.position = transform.position;
-
-
             // 敵を削除する
             Destroy(gameObject);
 
         }
     }
+
+
 
     // ダメージを受ける関数
     //プレイヤーの弾に当たる
@@ -68,7 +94,7 @@ public class TeresaDamege : MonoBehaviour
     public void Damage(int damage)
     {
 
-        Debug.Log("Karua damage called");
+        Debug.Log("Teresa damage called");
 
         Debug.Log(damage);
 
@@ -87,7 +113,10 @@ public class TeresaDamege : MonoBehaviour
         if (m_HP <= 0)
         {
             Debug.Log("死んでしまった");
-            //死んだらゲームオーバー画面に移動
+           
+
+
+        //死んだらクリア画面に移動
 
             { SceneManager.LoadScene("clearTeresa"); }
         }

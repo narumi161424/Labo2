@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1375264317509982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.21, y: 1.4, z: 0}
+  m_LocalPosition: {x: -5.29, y: -1.02, z: 0}
   m_LocalScale: {x: 1.7983, y: 1.7983, z: 1.7983}
   m_Children:
   - {fileID: 4399735966702564}
@@ -174,7 +174,7 @@ Animation:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1375264317509982}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 6cea4bddd191f455ab1a3f5a6b9f660f, type: 2}
   m_Animations: []
@@ -196,9 +196,10 @@ MonoBehaviour:
   moveSpeed: 5
   flowObject: {fileID: 0}
   gemSound: {fileID: 0}
-  m_hpMax: 1000
+  Attack: {fileID: 1161241720928868}
+  m_hpMax: 800
   m_hp: 0
-  m_damage: 5
+  m_damage: 3
 --- !u!114 &114305727617467574
 MonoBehaviour:
   m_ObjectHideFlags: 1

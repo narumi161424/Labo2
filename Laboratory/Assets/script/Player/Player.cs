@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Player : MonoBehaviour {
+public class Player : MonoBehaviour
+{
 
 
 
 
     // プレイヤーのインスタンスを管理する static 変数
-        public static Player m_instance;
+    public static Player m_instance;
 
 
 
@@ -29,6 +30,7 @@ public class Player : MonoBehaviour {
     private AudioSource sound01;
 
 
+    public GameObject Attack;
 
     public int m_hpMax; // HP の最大値
     public int m_hp; // HP
@@ -89,7 +91,7 @@ public class Player : MonoBehaviour {
     // 向きを変える
     private void Turn(float inputValue)
     {
-        
+
         if (inputValue > 0)
         {
             transform.localScale = defalutScale;
@@ -106,6 +108,7 @@ public class Player : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        Attack.SetActive(!GameDirector.Instance.IsPause);
 
         //ポーズ中ならまるまる処理を飛ばす
         if (GameDirector.Instance.IsPause)

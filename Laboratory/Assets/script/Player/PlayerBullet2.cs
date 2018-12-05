@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBullet2: MonoBehaviour {
+public class PlayerBullet2: MonoBehaviour 
+{
 
 
 
@@ -10,24 +11,23 @@ public class PlayerBullet2: MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
+        //ポーズ中ならまるまる処理を飛ばす
+        if (GameDirector.Instance.IsPause)
+            return;
 
-        // 弾と衝突した場合
+
+        // 敵と衝突した場合
         if (collision.name.Contains("teresa"))
         {
 
             //敵にダメージを与える
+            //Debug.Log(collision.gameObject.GetComponent<Player>());
+            if (collision.gameObject.GetComponent<TeresaDamege>() != null)
+            {
+                collision.gameObject.GetComponent<TeresaDamege>().Damage(3);
+            }
 
 
-            //爆発を作る
-            //var bom = Instantiate(MobRoot.Instance.Bom, transform.parent);
-            //bom.transform.position = transform.position;
-
-
-
-
-            Debug.Log(collision.gameObject.GetComponent<TeresaDamege>());
-
-            collision.gameObject.GetComponent<TeresaDamege>().Damage(3);
 
 
 

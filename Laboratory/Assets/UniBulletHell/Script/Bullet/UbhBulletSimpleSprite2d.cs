@@ -27,13 +27,16 @@ public class UbhBulletSimpleSprite2d : UbhBullet
     {
         m_isActive = isActive;
 
-       // m_rigidbody2d.simulated = isActive;
+        if ( m_rigidbody2d == null){
+            return;
+        }
+        m_rigidbody2d.simulated = isActive;
 
         if (m_collider2ds != null && m_collider2ds.Length > 0)
         {
             for (int i = 0; i < m_collider2ds.Length; i++)
             {
-              //  m_collider2ds[i].enabled = isActive;
+               m_collider2ds[i].enabled = isActive;
             }
         }
 
@@ -41,7 +44,7 @@ public class UbhBulletSimpleSprite2d : UbhBullet
         {
             for (int i = 0; i < m_spriteRenderers.Length; i++)
             {
-                m_spriteRenderers[i].enabled = isActive;
+               m_spriteRenderers[i].enabled = isActive;
             }
         }
     }

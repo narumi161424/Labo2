@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-
+[RequireComponent (typeof(AudioSource))]
 public class EnemyDamege : MonoBehaviour
 {
 
@@ -14,6 +14,15 @@ public class EnemyDamege : MonoBehaviour
     public int m_HP;
     public int m_damage;
 
+    //スペル
+    public GameObject kiraikirai;
+    public GameObject Homing;
+    public GameObject yokouti;
+    public GameObject mawaru;
+
+
+
+
     private AudioSource sound01;
 
 
@@ -21,15 +30,35 @@ public class EnemyDamege : MonoBehaviour
     void Start()
     {
         //AudioSourceコンポーネントを取得し、変数に格納
-       // sound01 = GetComponent<AudioSource>();
+       sound01 = GetComponent<AudioSource>();
     }
 
+
+    // Update is called once per frame
+    void Update()
+    {
+        //止める攻撃
+
+        kiraikirai.SetActive(!GameDirector.Instance.IsPause);
+        Homing.SetActive(!GameDirector.Instance.IsPause);
+        yokouti.SetActive(!GameDirector.Instance.IsPause);
+        mawaru.SetActive(!GameDirector.Instance.IsPause);
+
+
+        //ポーズ中ならまるまる処理を飛ばす
+        if (GameDirector.Instance.IsPause)
+            return;
+
+    }
 
 
     // 他のオブジェクトと衝突した時に呼び出される関数
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+
+
+
+
         // Debug.Log(collision.name);
 
         // 弾と衝突した場合
@@ -39,9 +68,8 @@ public class EnemyDamege : MonoBehaviour
             Debug.Log(collision.name);
 
             // 弾が敵に当たったら音を出す
-
-            // sound01.PlayOneShot(sound01.clip);
-
+           
+          sound01.PlayOneShot(sound01.clip);
 
             // 弾を削除する
             Destroy(collision.gameObject);
