@@ -694,7 +694,7 @@ Prefab:
         type: 3}
     - target: {fileID: 1945895310968782, guid: 60b402b2de207408abd3cecd4a35f53d, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4558597080459902, guid: 60b402b2de207408abd3cecd4a35f53d, type: 2}
       propertyPath: m_LocalScale.x
@@ -780,6 +780,11 @@ Prefab:
     - target: {fileID: 1375264317509982, guid: 7fd5ad6087cb748739b1461175af5149, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114290341273592884, guid: 7fd5ad6087cb748739b1461175af5149,
+        type: 2}
+      propertyPath: moveSpeed
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fd5ad6087cb748739b1461175af5149, type: 2}
@@ -1382,12 +1387,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1504825624106456, guid: b8e96aff5482048809e1b129aa3c7185, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224315404046367042, guid: b8e96aff5482048809e1b129aa3c7185,
         type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.32503322
+      value: 0.5078644
       objectReference: {fileID: 0}
     - target: {fileID: 224315404046367042, guid: b8e96aff5482048809e1b129aa3c7185,
         type: 2}
@@ -1405,6 +1410,36 @@ Prefab:
     - target: {fileID: 4437842120112072, guid: b8e96aff5482048809e1b129aa3c7185, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114022370222699252, guid: b8e96aff5482048809e1b129aa3c7185,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114022370222699252, guid: b8e96aff5482048809e1b129aa3c7185,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.5518868
+      objectReference: {fileID: 0}
+    - target: {fileID: 114022370222699252, guid: b8e96aff5482048809e1b129aa3c7185,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.86818904
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651385950241990, guid: b8e96aff5482048809e1b129aa3c7185,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.5227969
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651385950241990, guid: b8e96aff5482048809e1b129aa3c7185,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651385950241990, guid: b8e96aff5482048809e1b129aa3c7185,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.3820755
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114313592664866418, guid: b8e96aff5482048809e1b129aa3c7185, type: 2}
@@ -1610,7 +1645,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1619775497}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 983b6a47f396a48dd85cdb33f4a23e8a, type: 3}
   m_Name: 
@@ -1665,7 +1700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1959624996
 MonoBehaviour:
   m_ObjectHideFlags: 2

@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4453682537551486}
   - component: {fileID: 114752989463574774}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 20WayAccelTurnAllRangeShot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4117953173650844}
   - component: {fileID: 114846521989796710}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kurukurumawaru
   m_TagString: Untagged
   m_Icon: {fileID: 0}

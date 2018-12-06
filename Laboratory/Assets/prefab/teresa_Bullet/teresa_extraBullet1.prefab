@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50783855795556804}
   - component: {fileID: 58657501012712180}
   - component: {fileID: 114783908765210360}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: teresaBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4336294993122274}
   - component: {fileID: 114453285279761412}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: teresa_extraBullet1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

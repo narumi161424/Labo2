@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4702557601516402}
   - component: {fileID: 114932980614241816}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KaruaBullet3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 50161006332811120}
   - component: {fileID: 58940523618822774}
   - component: {fileID: 114456161539570504}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

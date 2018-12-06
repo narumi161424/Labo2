@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4910166733572936}
   - component: {fileID: 114516255220695602}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Homing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4655103105750742}
   - component: {fileID: 114009272636868048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HomingShot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

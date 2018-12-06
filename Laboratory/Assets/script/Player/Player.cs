@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    // 方向
+    public enum Direction
+    {
+        Left, //左
+        Right //右
+    }
 
-
-
+    public Direction Dir { get; private set; }
 
     // プレイヤーのインスタンスを管理する static 変数
     public static Player m_instance;
@@ -36,8 +41,9 @@ public class Player : MonoBehaviour
     public int m_hp; // HP
     public int m_damage;
 
-
-
+    //左右のショット
+    [SerializeField]
+    UbhBaseShot[] shots;
 
     // ダメージを受ける関数
     // 敵とぶつかった時に呼び出される
@@ -84,7 +90,7 @@ public class Player : MonoBehaviour
         m_instance = this;
 
         m_hp = m_hpMax; // HP
-
+        Dir = Direction.Right; // 方向
     }
 
 
@@ -139,49 +145,31 @@ public class Player : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.down * moveSpeed;
         }
 
-
-
-        bool isRight = Input.GetKey(KeyCode.RightArrow);
-        bool isLeft = Input.GetKey(KeyCode.LeftArrow);
-        bool isAttack = Input.GetKey(KeyCode.Space);
-
-
-
-        //左
-        if (isLeft)
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-
+            //左
             //Debug.Log("Left");
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.right * -1.0f * moveSpeed;
-
-        }
-
-        //右
-        if (isRight)
+            Dir = Direction.Left;
+        }else
+        if (Input.GetKey(KeyCode.RightArrow))
         {
+            //右
 
             //Debug.Log("Right");
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.right * moveSpeed;
-
+            Dir = Direction.Right;
         }
 
-
-
+        //方向に合わせて弾の発射方向も選ぶ
+        for (int i = 0; i < shots.Length; ++i)
+            shots[i].gameObject.SetActive((int)Dir == i);
 
         //方向に合わせてキャラの見た目変化
-
-
-        isRight = !isLeft;
-
         var animator = GetComponent<Animator>();
-
-
-        animator.SetBool("_Right", isRight);
-        animator.SetBool("_Left", isLeft);
-        animator.SetBool("_Attack", isAttack);
+        animator.SetBool("_Right", Dir == Direction.Right);
+        animator.SetBool("_Left", Dir == Direction.Left);
+//      animator.SetBool("_Attack", Input.GetKey(KeyCode.Space));
     }
-
-
-
 }
 
