@@ -694,7 +694,7 @@ Prefab:
         type: 3}
     - target: {fileID: 1945895310968782, guid: 60b402b2de207408abd3cecd4a35f53d, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4558597080459902, guid: 60b402b2de207408abd3cecd4a35f53d, type: 2}
       propertyPath: m_LocalScale.x
@@ -707,6 +707,11 @@ Prefab:
     - target: {fileID: 4558597080459902, guid: 60b402b2de207408abd3cecd4a35f53d, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114599757778300380, guid: 60b402b2de207408abd3cecd4a35f53d,
+        type: 2}
+      propertyPath: nameText
+      value: "\u30C6\u30EC\u30B5"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60b402b2de207408abd3cecd4a35f53d, type: 2}
@@ -980,7 +985,8 @@ Animation:
   m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: bc04fd3bb0e0140cc9af1cb60e588e6b, type: 2}
-  m_Animations: []
+  m_Animations:
+  - {fileID: 7400000, guid: bc04fd3bb0e0140cc9af1cb60e588e6b, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -1659,7 +1665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1959624996
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1689,7 +1695,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 28
-    y: 61
+    y: 62
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1750,8 +1756,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1959624997}
-  selectedCommands:
-  - {fileID: 1959625023}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0

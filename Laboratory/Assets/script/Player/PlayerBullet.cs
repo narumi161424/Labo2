@@ -17,7 +17,7 @@ public class PlayerBullet : MonoBehaviour
         if (GameDirector.Instance.IsPause)
             return;
 
-        // 弾と衝突した場合
+        // 敵と衝突した場合
         if (collision.name.Contains("KaruaBoss"))
         {
 

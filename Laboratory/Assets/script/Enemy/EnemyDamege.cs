@@ -10,7 +10,7 @@ public class EnemyDamege : MonoBehaviour
 
 
 
-    public AudioClip destroySound;
+   
     public int m_HP;
     public int m_damage;
 
