@@ -7,6 +7,8 @@ public class PlayerBullet : MonoBehaviour
 
 
 
+   
+
 
     // 他のオブジェクトと衝突した時に呼び出される関数
     private void OnTriggerEnter2D(Collider2D collision)
@@ -21,14 +23,14 @@ public class PlayerBullet : MonoBehaviour
         if (collision.name.Contains("KaruaBoss"))
         {
 
+
+          
+
             //敵にダメージを与える
-
-
-
 
             Debug.Log(collision.gameObject.GetComponent<EnemyDamege>());
 
-            collision.gameObject.GetComponent<EnemyDamege>().Damage(30);
+            collision.gameObject.GetComponent<EnemyDamege>().Damage(10);
 
 
 

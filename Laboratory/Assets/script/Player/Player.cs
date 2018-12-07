@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
             Debug.Log("死んでしまった");
             //死んだらゲームオーバー画面に移動
 
-            { SceneManager.LoadScene("gameoverTeresa"); }
+            { SceneManager.LoadScene("gameoverKarua"); }
         }
 
         gameObject.SetActive(false);

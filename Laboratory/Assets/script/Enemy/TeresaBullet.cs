@@ -18,14 +18,14 @@ public class TeresaBullet : MonoBehaviour
         //プレイヤーにダメージを与える
 
         // 弾と衝突した場合
-        if (collision.name.Contains("Player"))
+        if (collision.name.Contains("Player2"))
         {
 
 
             //Debug.Log(collision.gameObject.GetComponent<Player>());
           
-            collision.gameObject.GetComponent<Player>();
-            collision.gameObject.GetComponent<Player>().Damage(100);
+            collision.gameObject.GetComponent<Player2>();
+            collision.gameObject.GetComponent<Player2>().Damage(100);
 
 
 

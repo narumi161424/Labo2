@@ -359,6 +359,11 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: e3570b8dc26184dcc9034af164a8655a, type: 3}
+    - target: {fileID: 82734619512562092, guid: d3cacbfc6bf164c01a843c80db78bd1a,
+        type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3cacbfc6bf164c01a843c80db78bd1a, type: 2}
   m_IsPrefabAsset: 0
@@ -503,5 +508,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

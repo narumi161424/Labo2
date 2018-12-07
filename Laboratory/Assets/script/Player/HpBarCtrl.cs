@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class HpBarCtrl : MonoBehaviour
 {
-    public Player _player;
+    public Player2 _player;
     public Slider _slider;
 
     void Start()
