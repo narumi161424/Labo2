@@ -23,7 +23,7 @@ public class EnemyBullet : MonoBehaviour {
             //Debug.Log(collision.gameObject.GetComponent<Player>());
             collision.gameObject.GetComponent<Player>();
 
-                collision.gameObject.GetComponent<Player>().Damage(10);
+                collision.gameObject.GetComponent<Player>().Damage(15);
             
 
 

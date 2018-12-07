@@ -323,7 +323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_bulletPrefab: {fileID: 1772381880286120, guid: a616ac921c6f24e9a93267dbee624db6,
     type: 2}
-  m_bulletNum: 200
+  m_bulletNum: 10
   m_bulletSpeed: 2
   m_accelerationSpeed: 0
   m_useMaxSpeed: 0
@@ -417,7 +417,7 @@ Prefab:
         type: 2}
     - target: {fileID: 11400000, guid: 9252d7b9b055445bd958ec88af251127, type: 2}
       propertyPath: m_bulletNum
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9252d7b9b055445bd958ec88af251127, type: 2}
       propertyPath: m_bulletSpeed
@@ -685,7 +685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_isFollow: 1
-  m_speed: 0.01
+  m_speed: 0.02
 --- !u!212 &444193052
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -762,9 +762,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cfd55ccbefc6f4912bd6374eb84c6cf3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

@@ -30,7 +30,7 @@ public class PlayerBullet : MonoBehaviour
 
             Debug.Log(collision.gameObject.GetComponent<EnemyDamege>());
 
-            collision.gameObject.GetComponent<EnemyDamege>().Damage(10);
+            collision.gameObject.GetComponent<EnemyDamege>().Damage(5);
 
 
 
