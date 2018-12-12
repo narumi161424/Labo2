@@ -1053,7 +1053,7 @@ Prefab:
         type: 3}
     - target: {fileID: 1945895310968782, guid: 60b402b2de207408abd3cecd4a35f53d, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4558597080459902, guid: 60b402b2de207408abd3cecd4a35f53d, type: 2}
       propertyPath: m_LocalScale.x
@@ -1585,7 +1585,6 @@ MonoBehaviour:
   ringring: {fileID: 2008008532}
   mawaru: {fileID: 801331187}
   kakusan: {fileID: 1276398900}
-  destroySound: {fileID: 0}
   m_HP: 900
   m_damage: 100
 --- !u!82 &1177427540
@@ -1605,13 +1604,13 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 0
+  BypassEffects: 1
   BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
@@ -2695,7 +2694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1959624996
 MonoBehaviour:
   m_ObjectHideFlags: 2

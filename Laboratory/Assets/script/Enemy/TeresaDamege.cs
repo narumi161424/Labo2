@@ -17,7 +17,7 @@ public class TeresaDamege : MonoBehaviour
 
 
 
-    public AudioClip destroySound;
+   
     public int m_HP;
     public int m_damage;
 

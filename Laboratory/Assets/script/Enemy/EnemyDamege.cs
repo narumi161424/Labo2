@@ -21,8 +21,8 @@ public class EnemyDamege : MonoBehaviour
     public GameObject mawaru;
 
 
-
-    private AudioSource sound01;
+    //ダメージ音
+    private AudioSource audioSource;
 
 
 
@@ -68,7 +68,7 @@ public class EnemyDamege : MonoBehaviour
 
             // 弾が敵に当たったら音を出す
            
-          sound01.PlayOneShot(sound01.clip);
+            audioSource.PlayOneShot(audioSource.clip);
 
             // 弾を削除する
             Destroy(collision.gameObject);
