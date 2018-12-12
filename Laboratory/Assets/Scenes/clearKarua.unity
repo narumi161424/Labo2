@@ -126,6 +126,8 @@ GameObject:
   - component: {fileID: 57065455}
   - component: {fileID: 57065457}
   - component: {fileID: 57065456}
+  - component: {fileID: 57065460}
+  - component: {fileID: 57065459}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -159,7 +161,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 57065455}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 57065459}
   variables: []
   description: 
   stepPause: 0
@@ -187,19 +190,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 66
     y: 72
-    width: 120
+    width: 127
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: New Block
+  blockName: "\u30BF\u30A4\u30C8\u30EB\u306B\u623B\u308B"
   description: 
   eventHandler: {fileID: 57065457}
   commandList:
   - {fileID: 57065456}
+  - {fileID: 57065460}
+  - {fileID: 57065459}
 --- !u!114 &57065456
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 57065453}
@@ -238,6 +243,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &57065459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 57065453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 3
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: opening
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &57065460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 57065453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca31fffe1be42a49b96bbb8b7ff5a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 2
+  indentLevel: 0
+  _targetObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1206312502}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 20
+  _toFrom: 0
+  _absAdd: 0
+  easeType: 4
+  loopType: 35
+  repeats: 0
+  stopPreviousTweens: 0
+  waitUntilFinished: 1
+  _toTransform:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  _toPosition:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+  isLocal: 0
 --- !u!1 &154393013
 GameObject:
   m_ObjectHideFlags: 0

@@ -1053,7 +1053,7 @@ Prefab:
         type: 3}
     - target: {fileID: 1945895310968782, guid: 60b402b2de207408abd3cecd4a35f53d, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4558597080459902, guid: 60b402b2de207408abd3cecd4a35f53d, type: 2}
       propertyPath: m_LocalScale.x
@@ -1586,7 +1586,7 @@ MonoBehaviour:
   mawaru: {fileID: 801331187}
   kakusan: {fileID: 1276398900}
   destroySound: {fileID: 0}
-  m_HP: 800
+  m_HP: 900
   m_damage: 100
 --- !u!82 &1177427540
 AudioSource:
@@ -2695,7 +2695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1959624996
 MonoBehaviour:
   m_ObjectHideFlags: 2

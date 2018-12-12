@@ -29,14 +29,14 @@ public class EnemyDamege : MonoBehaviour
     void Start()
     {
         //AudioSourceコンポーネントを取得し、変数に格納
-       sound01 = GetComponent<AudioSource>();
+        AudioSource source = gameObject.GetComponent<AudioSource>();
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        //止める攻撃
+        //ポーズ中に止める攻撃
 
         kiraikirai.SetActive(!GameDirector.Instance.IsPause);
         Homing.SetActive(!GameDirector.Instance.IsPause);
