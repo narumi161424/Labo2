@@ -691,7 +691,7 @@ MonoBehaviour:
   speed: 0.5
   spriteCount: 3
   front: {fileID: 1936509924690544}
-  xMin: -15
+  xMin: -20
 --- !u!114 &114255598539244538
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -781,7 +781,7 @@ MonoBehaviour:
   speed: 0.5
   spriteCount: 3
   front: {fileID: 1940378123983310}
-  xMin: -15
+  xMin: -20
 --- !u!114 &114565026872534030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -811,7 +811,7 @@ MonoBehaviour:
   speed: 0.5
   spriteCount: 3
   front: {fileID: 1841999608606126}
-  xMin: -15
+  xMin: -20
 --- !u!114 &114927965319951594
 MonoBehaviour:
   m_ObjectHideFlags: 1

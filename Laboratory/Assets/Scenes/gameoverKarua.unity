@@ -279,7 +279,7 @@ MonoBehaviour:
     gameObjectVal: {fileID: 668976801}
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 15
+    floatVal: 10
   _toFrom: 0
   _absAdd: 0
   easeType: 4

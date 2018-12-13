@@ -535,8 +535,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 65
-    y: 66
+    x: 68
+    y: 64
     width: 127
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -592,7 +592,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1851949343
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1851949337}
@@ -610,7 +610,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &1851949344
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1851949337}
@@ -626,7 +626,7 @@ MonoBehaviour:
     gameObjectVal: {fileID: 1269874247}
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 20
+    floatVal: 10
   _toFrom: 0
   _absAdd: 0
   easeType: 4

@@ -156,6 +156,10 @@ Prefab:
       propertyPath: m_Name
       value: HPaicon
       objectReference: {fileID: 0}
+    - target: {fileID: 1263473734555572, guid: 8914982eac56e4616b9c7c417f5386c2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8914982eac56e4616b9c7c417f5386c2, type: 2}
   m_IsPrefabAsset: 0
@@ -752,6 +756,10 @@ Prefab:
     - target: {fileID: 4472840479760560, guid: 91598110fa5174f87a7c10876b147ce3, type: 2}
       propertyPath: m_RootOrder
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249258332472442, guid: 91598110fa5174f87a7c10876b147ce3, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91598110fa5174f87a7c10876b147ce3, type: 2}
