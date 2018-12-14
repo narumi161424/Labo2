@@ -66,7 +66,13 @@ public class EnemyDamege : MonoBehaviour
 
             Debug.Log(collision.name);
 
-            // 弾が敵に当たったら音を出す
+           
+            //弾が当たったら爆発
+            var bom = Instantiate(MobRoot.Instance.Bom, transform.parent);
+            bom.transform.position = transform.position;
+
+
+            // 弾が敵に当たったら音を出す　はずなのにでない
            
             audioSource.PlayOneShot(audioSource.clip);
 

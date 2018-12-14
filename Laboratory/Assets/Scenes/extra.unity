@@ -709,7 +709,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 00f9a2599f95e2c4c9c11ae87202e717, type: 2}
       propertyPath: m_bulletSpeed
-      value: 0.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 00f9a2599f95e2c4c9c11ae87202e717, type: 2}
       propertyPath: m_accelerationSpeed
@@ -1061,7 +1061,7 @@ Prefab:
         type: 3}
     - target: {fileID: 1945895310968782, guid: 60b402b2de207408abd3cecd4a35f53d, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4558597080459902, guid: 60b402b2de207408abd3cecd4a35f53d, type: 2}
       propertyPath: m_LocalScale.x
@@ -1479,7 +1479,7 @@ Animator:
   m_GameObject: {fileID: 1177427533}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0384ba53156a04974a3a088988161c76, type: 2}
+  m_Controller: {fileID: 9100000, guid: deb97bd66c45a416493a9142e400873f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1497,7 +1497,7 @@ Animation:
   m_GameObject: {fileID: 1177427533}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: bc04fd3bb0e0140cc9af1cb60e588e6b, type: 2}
+  m_Animation: {fileID: 7400000, guid: ad82a06de63834c89bafec6b5a6ba6ca, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: bc04fd3bb0e0140cc9af1cb60e588e6b, type: 2}
   m_WrapMode: 0
@@ -1782,7 +1782,7 @@ MonoBehaviour:
   m_bulletPrefab: {fileID: 1715633669490278, guid: eafb27f2fe6c44315900510591aaf3b9,
     type: 2}
   m_bulletNum: 20
-  m_bulletSpeed: 1
+  m_bulletSpeed: 3.5
   m_accelerationSpeed: 0.1
   m_useMaxSpeed: 0
   m_maxSpeed: 0
@@ -1792,7 +1792,7 @@ MonoBehaviour:
   m_usePauseAndResume: 0
   m_pauseTime: 0
   m_resumeTime: 0
-  m_useAutoRelease: 1
+  m_useAutoRelease: 0
   m_autoReleaseTime: 10
   m_shotFiredCallbackEvents:
     m_PersistentCalls:
@@ -2702,7 +2702,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1959624996
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3680,6 +3680,10 @@ Prefab:
       value: 
       objectReference: {fileID: 1190796378680564, guid: 69d870cd2b3024e81a8d22c540d7662b,
         type: 2}
+    - target: {fileID: 11400000, guid: 3d4f67305beac4ecfb6e1c9371a52512, type: 2}
+      propertyPath: m_bulletSpeed
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d4f67305beac4ecfb6e1c9371a52512, type: 2}
   m_IsPrefabAsset: 0
@@ -3730,6 +3734,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 34f818555d2d29943a69526d394857e2, type: 2}
       propertyPath: m_accelerationSpeed
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 34f818555d2d29943a69526d394857e2, type: 2}
+      propertyPath: m_bulletSpeed
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34f818555d2d29943a69526d394857e2, type: 2}
