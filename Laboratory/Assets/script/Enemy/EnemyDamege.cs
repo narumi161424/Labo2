@@ -21,17 +21,6 @@ public class EnemyDamege : MonoBehaviour
     public GameObject mawaru;
 
 
-    //ダメージ音
-    private AudioSource audioSource;
-
-
-
-    void Start()
-    {
-        //AudioSourceコンポーネントを取得し、変数に格納
-        AudioSource source = gameObject.GetComponent<AudioSource>();
-    }
-
 
     // Update is called once per frame
     void Update()
@@ -67,28 +56,24 @@ public class EnemyDamege : MonoBehaviour
             Debug.Log(collision.name);
 
            
-            //弾が当たったら爆発
-            var bom = Instantiate(MobRoot.Instance.Bom, transform.parent);
-            bom.transform.position = transform.position;
-
-
-            // 弾が敵に当たったら音を出す　はずなのにでない
            
-            audioSource.PlayOneShot(audioSource.clip);
-
             // 弾を削除する
             Destroy(collision.gameObject);
 
             // 敵の HP を減らす
             m_HP--;
 
+          
+
             // 敵の HP がまだ残っている場合はここで処理を終える
             if (0 < m_HP) return;
 
 
-            //爆発を作る
-            //var bom = Instantiate(MobRoot.Instance.Bom, transform.parent);
-            //bom.transform.position = transform.position;
+            //弾が当たったら爆発
+            var bom = Instantiate(MobRoot.Instance.Bom, transform.parent);
+            bom.transform.position = transform.position;
+
+
 
 
             // 敵を削除する

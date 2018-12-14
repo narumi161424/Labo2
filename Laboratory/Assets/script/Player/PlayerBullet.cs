@@ -7,7 +7,20 @@ public class PlayerBullet : MonoBehaviour
 
 
 
-   
+
+    //ダメージ音
+    private AudioSource sound01;
+
+
+
+    // Use this for initialization
+    void Start()
+    {
+        //AudioSourceコンポーネントを取得し、変数に格納
+        sound01 = GetComponent<AudioSource>();
+
+    }
+
 
 
     // 他のオブジェクトと衝突した時に呼び出される関数
@@ -24,7 +37,10 @@ public class PlayerBullet : MonoBehaviour
         {
 
 
-          
+            //ダメージ音
+            sound01.PlayOneShot(sound01.clip);
+
+
 
             //敵にダメージを与える
 

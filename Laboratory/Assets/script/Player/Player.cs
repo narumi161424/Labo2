@@ -21,25 +21,27 @@ public class Player : MonoBehaviour
 
 
     public float moveSpeed;
-
-    public GameObject flowObject;  //話す
-
-
     Rigidbody2D rigid2D;
 
 
-    public AudioClip gemSound;
     private Vector3 defalutScale = Vector3.one;
-
-
     private AudioSource sound01;
-
-
+   
     public GameObject Attack;
 
     public int m_hpMax; // HP の最大値
     public int m_hp; // HP
     public int m_damage;
+
+
+    // Use this for initialization
+    void Start()
+    {
+        //AudioSourceコンポーネントを取得し、変数に格納
+        sound01 = GetComponent<AudioSource>();
+
+    }
+
 
     //左右のショット
     [SerializeField]
@@ -54,13 +56,20 @@ public class Player : MonoBehaviour
 
         Debug.Log(damage);
 
+
+
+
         // HP を減らす
         m_hp -= damage;
 
         Debug.Log(m_hp);
 
+        //ダメージ音
+        sound01.PlayOneShot(sound01.clip);
+
         // HP がまだある場合、ここで処理を終える
         if (0 < m_hp) return;
+
 
 
 
@@ -79,7 +88,7 @@ public class Player : MonoBehaviour
 
 
 
-
+  
 
 
     // ゲーム開始時に呼び出される関数
@@ -92,6 +101,9 @@ public class Player : MonoBehaviour
         m_hp = m_hpMax; // HP
         Dir = Direction.Right; // 方向
     }
+
+
+
 
 
     // 向きを変える
@@ -119,6 +131,8 @@ public class Player : MonoBehaviour
         //ポーズ中ならまるまる処理を飛ばす
         if (GameDirector.Instance.IsPause)
             return;
+
+
 
 
 

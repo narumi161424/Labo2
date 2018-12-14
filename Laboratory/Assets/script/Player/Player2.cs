@@ -22,8 +22,6 @@ public class Player2 : MonoBehaviour
 
     public float moveSpeed;
 
-    public GameObject flowObject;  //話す
-
 
     Rigidbody2D rigid2D;
 
@@ -40,6 +38,16 @@ public class Player2 : MonoBehaviour
     public int m_hpMax; // HP の最大値
     public int m_hp; // HP
     public int m_damage;
+
+
+    // Use this for initialization
+    void Start()
+    {
+        //AudioSourceコンポーネントを取得し、変数に格納
+        sound01 = GetComponent<AudioSource>();
+
+    }
+
 
     //左右のショット
     [SerializeField]
@@ -58,6 +66,10 @@ public class Player2 : MonoBehaviour
         m_hp -= damage;
 
         Debug.Log(m_hp);
+
+        //ダメージ音
+        sound01.PlayOneShot(sound01.clip);
+
 
         // HP がまだある場合、ここで処理を終える
         if (0 < m_hp) return;
