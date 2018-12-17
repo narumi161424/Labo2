@@ -37,16 +37,15 @@ public class PlayerBullet : MonoBehaviour
         {
 
 
-            //ダメージ音
-            sound01.PlayOneShot(sound01.clip);
-
-
 
             //敵にダメージを与える
 
             Debug.Log(collision.gameObject.GetComponent<EnemyDamege>());
-
             collision.gameObject.GetComponent<EnemyDamege>().Damage(5);
+
+
+            //ダメージ音
+            sound01.PlayOneShot(sound01.clip);
 
 
 
