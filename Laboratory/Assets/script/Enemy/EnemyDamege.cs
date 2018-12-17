@@ -9,8 +9,8 @@ public class EnemyDamege : MonoBehaviour
 {
 
 
-
    
+
     public int m_HP;
     public int m_damage;
 
@@ -21,10 +21,30 @@ public class EnemyDamege : MonoBehaviour
     public GameObject mawaru;
 
 
+    //ダメージ音
+    private AudioSource sound01;
+
+
+    // Use this for initialization
+    void Start()
+    {
+        //AudioSourceコンポーネントを取得し、変数に格納
+        sound01 = GetComponent<AudioSource>();
+
+    }
+
+
+
 
     // Update is called once per frame
     void Update()
     {
+        // Debug.Log("Z");
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            sound01.PlayOneShot(sound01.clip,1.0f);
+            Debug.Log("Z");
+        }
         //ポーズ中に止める攻撃
 
         kiraikirai.SetActive(!GameDirector.Instance.IsPause);
@@ -36,6 +56,7 @@ public class EnemyDamege : MonoBehaviour
         //ポーズ中ならまるまる処理を飛ばす
         if (GameDirector.Instance.IsPause)
             return;
+
 
     }
 
@@ -56,14 +77,16 @@ public class EnemyDamege : MonoBehaviour
             Debug.Log(collision.name);
 
            
-           
+            //ダメージ音
+            sound01.PlayOneShot(sound01.clip,1.0f);
+
+
             // 弾を削除する
-            Destroy(collision.gameObject);
+           // Destroy(collision.gameObject);
 
             // 敵の HP を減らす
             m_HP--;
 
-          
 
             // 敵の HP がまだ残っている場合はここで処理を終える
             if (0 < m_HP) return;
@@ -74,10 +97,6 @@ public class EnemyDamege : MonoBehaviour
             bom.transform.position = transform.position;
 
 
-
-
-            // 敵を削除する
-            Destroy(gameObject);
 
         }
     }
@@ -91,6 +110,8 @@ public class EnemyDamege : MonoBehaviour
         Debug.Log("Karua damage called");
 
         Debug.Log(damage);
+
+        sound01.PlayOneShot(sound01.clip, 1.0f);
 
         // HP を減らす
         m_HP -= damage;

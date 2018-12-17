@@ -66,13 +66,6 @@ public class TeresaDamege : MonoBehaviour
             Debug.Log(collision.name);
 
 
-            // 弾が敵に当たったら音を出す
-            if (collision.tag == "Attack")
-            {
-                sound01.PlayOneShot(sound01.clip);
-            }
-
-
 
             // 弾を削除する
             Destroy(collision.gameObject);
@@ -101,6 +94,9 @@ public class TeresaDamege : MonoBehaviour
         Debug.Log("Teresa damage called");
 
         Debug.Log(damage);
+
+        //ダメージ音
+        sound01.PlayOneShot(sound01.clip);
 
         // HP を減らす
         m_HP -= damage;

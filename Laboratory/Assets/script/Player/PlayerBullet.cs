@@ -8,18 +8,7 @@ public class PlayerBullet : MonoBehaviour
 
 
 
-    //ダメージ音
-    private AudioSource sound01;
 
-
-
-    // Use this for initialization
-    void Start()
-    {
-        //AudioSourceコンポーネントを取得し、変数に格納
-        sound01 = GetComponent<AudioSource>();
-
-    }
 
 
 
@@ -42,10 +31,6 @@ public class PlayerBullet : MonoBehaviour
 
             Debug.Log(collision.gameObject.GetComponent<EnemyDamege>());
             collision.gameObject.GetComponent<EnemyDamege>().Damage(5);
-
-
-            //ダメージ音
-            sound01.PlayOneShot(sound01.clip);
 
 
 
