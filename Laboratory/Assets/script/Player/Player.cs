@@ -57,6 +57,9 @@ public class Player : MonoBehaviour
         Debug.Log(damage);
 
 
+        //ダメージを受けた時の見た目変化
+        var animator = GetComponent<Animator>();
+        animator.SetTrigger("Damage");
 
 
         // HP を減らす

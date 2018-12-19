@@ -12,16 +12,13 @@ public class Player2 : MonoBehaviour
         Right //右
     }
 
+
     public Direction Dir { get; private set; }
 
     // プレイヤーのインスタンスを管理する static 変数
     public static Player2 m_instance;
 
-
-
-
     public float moveSpeed;
-
 
     Rigidbody2D rigid2D;
 
@@ -29,11 +26,11 @@ public class Player2 : MonoBehaviour
     public AudioClip gemSound;
     private Vector3 defalutScale = Vector3.one;
 
-
     private AudioSource sound01;
 
 
     public GameObject Attack;
+
 
     public int m_hpMax; // HP の最大値
     public int m_hp; // HP
@@ -67,10 +64,14 @@ public class Player2 : MonoBehaviour
 
         Debug.Log(m_hp);
 
+        //ダメージを受けた時の見た目変化
+        var animator = GetComponent<Animator>();
+        animator.SetTrigger("Damage");
+
         //ダメージ音
         sound01.PlayOneShot(sound01.clip);
 
-
+       
         // HP がまだある場合、ここで処理を終える
         if (0 < m_hp) return;
 
@@ -182,6 +183,7 @@ public class Player2 : MonoBehaviour
         var animator = GetComponent<Animator>();
         animator.SetBool("_Right", Dir == Direction.Right);
         animator.SetBool("_Left", Dir == Direction.Left);
+
         //      animator.SetBool("_Attack", Input.GetKey(KeyCode.Space));
     }
 }

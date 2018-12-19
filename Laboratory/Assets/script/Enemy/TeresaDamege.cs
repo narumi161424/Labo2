@@ -95,11 +95,22 @@ public class TeresaDamege : MonoBehaviour
 
         Debug.Log(damage);
 
+       
+
         //ダメージ音
         sound01.PlayOneShot(sound01.clip);
 
         // HP を減らす
         m_HP -= damage;
+
+
+
+        //弾が当たったら爆発
+       // var bom = Instantiate(MobRoot.Instance.Bom, transform.parent);
+       //bom.transform.position = transform.position;
+
+
+
 
         Debug.Log(m_HP);
 
